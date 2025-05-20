@@ -166,6 +166,6 @@ document.addEventListener("DOMContentLoaded", () => {
     cronometro("Long break");
   });
 
-  const originalBackgroundColor = document.body.style.backgroundColor; // Guarda el color original
+  const originalBackgroundColor = document.body.style.backgroundColor; 
 
 });
