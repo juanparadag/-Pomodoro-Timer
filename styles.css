@@ -124,7 +124,7 @@ input[type="text"] {
 }
 
 input[type="submit"] {
-  background-color: #5cb85c;
+  background-color: #44c044;
   color: white;
   padding: 10px 15px;
   border: none;
@@ -135,7 +135,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #4cae4c;
+  background-color: #449c44;
 }
 
 input:placeholder-shown {
@@ -143,7 +143,7 @@ input:placeholder-shown {
 }
 
 input:not(:placeholder-shown) {
-  background-color: #d1ffd1; 
+  background-color: #47d347; 
 }
 
 #tareas {
@@ -160,4 +160,37 @@ input:not(:placeholder-shown) {
   text-align: left; 
   width: 80vw; 
   max-width: 900px; 
+}
+
+.startbutton, .pausebutton {
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 60%;
+  max-width: 60px;
+  margin: 10px auto;
+  display: block;
+  text-align: center;
+}
+
+
+.startbutton {
+  background-color: #44c044;
+  color: white;
+}
+
+.startbutton:hover {
+  background-color: #3cb13c;
+}
+
+.pausebutton {
+  background-color: #d9534f;
+  color: white;
+}
+
+.pausebutton:hover {
+  background-color: #c9302c;
 }

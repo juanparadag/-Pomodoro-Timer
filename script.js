@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
           let botonPause = document.createElement("button");
           botonPause.innerText = "Pause";
           botonPause.innerHTML = '<i class="bi bi-pause-btn"></i>';
-          botonPause.classList.add("botones-button");
+          botonPause.classList.add("botones-button", "pausebutton");
           let botonDone = document.createElement("button");
           botonDone.innerHTML = '<i class="bi bi-check-square"></i>';
           botonDone.classList.add("botones-button");
@@ -142,11 +142,11 @@ document.addEventListener("DOMContentLoaded", () => {
     h1.style.display = "block";
     h2.style.display = "block";
     h1.innerText = "Taking break...";
-    h2.innerText = "5:00";
+    h2.innerText = "15:00";
     if (tiempo) {
       clearInterval(tiempo);
     }
-    [minutos, segundos] = [5, 0];
+    [minutos, segundos] = [15, 0];
     cronometro("Short break");
   });
 
@@ -158,11 +158,11 @@ document.addEventListener("DOMContentLoaded", () => {
     h1.style.display = "block";
     h2.style.display = "block";
     h1.innerText = "Enjoy your break...";
-    h2.innerText = "15:00";
+    h2.innerText = "30:00";
     if (tiempo) {
       clearInterval(tiempo);
     }
-    [minutos, segundos] = [15, 0];
+    [minutos, segundos] = [30, 0];
     cronometro("Long break");
   });
 
